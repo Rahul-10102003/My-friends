@@ -38,9 +38,6 @@ object-fit: cover;
 position: fixed;
 z-index: -1;
 }
-#main{
-    width: 100vw;
-}
 #page1{
     height: 90vh;
     width: 100vw;
