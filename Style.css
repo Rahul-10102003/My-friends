@@ -1,0 +1,132 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#nav{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 0% 5%;
+    gap: max(5vh,5vw);
+    position: fixed;
+    z-index: 1;
+    color: rgba(12, 24, 8, 0.61);
+    background: rgba( 184, 233, 134, 0.35 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 8px );
+-webkit-backdrop-filter: blur( 8px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+#nav h4{
+text-transform: uppercase;
+border-radius: 5px;
+padding:7px;
+}
+video{
+    width:100%;
+    height: 100%;
+object-fit: cover;
+position: fixed;
+z-index: -1;
+}
+#main{
+    width: 100vw;
+}
+#page1{
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(99, 128, 99);
+}
+#page1 h1{font-size: 70px;
+    text-shadow: 2px 2px 2px black;
+    text-wrap: wrap ;
+    text-align: center;
+}
+#page1 h2{
+    font-size: 30px;
+    text-wrap: wrap;
+    text-align: center;
+}
+#page2{
+    width: 80vw;
+    display: flex;
+    gap: max(4vw,4vh);
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10vw;
+    flex-wrap: wrap;
+} 
+#page2 div{
+    height: 40vh;
+    width: 40vh;
+    border-radius: 10px;
+}
+#page2 div:hover{
+    box-shadow: 5px 5px 5px gray;
+}
+#page3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    width: 100vw;
+    justify-content: center;
+    gap: 5px;
+}
+#page3 div{
+    width: 60vw;
+    height:7vh;
+    background-color: rgba(4, 7, 3, 0.959);
+    border-radius: 10px;
+    opacity: 0.5;
+    color: whitesmoke;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-top: 10px;
+}
+#page2 img{
+    border-radius: 10px;
+}
+#search{
+    width: 90vw;
+    height: 50px;
+    position: fixed;
+    margin: -10px 5vw 0px 5vw;
+    border-radius: 20px;
+    font-size: 2rem;
+    background-color: lightgreen;
+    z-index: 1;
+}
+#nav h4:hover{
+    background-image: linear-gradient(45deg,lightgreen,skyblue);
+    transform: translateY(-5px);
+    transition: 0.5s;
+}
+#nav a{
+    color: seagreen;
+    text-decoration: none;
+}
+@media only screen and (max-width:520px) {
+    #nav{
+        gap: 5px;
+        flex-direction: column;
+        row-gap: 10px;
+        height:20vh;
+    }
+    #search{
+        margin-top: 20px;
+    }
+}
